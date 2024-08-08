@@ -57,6 +57,7 @@
         .profile-info {
             flex: 1;
             text-align: left;
+            position: relative;
         }
         .profile-info h1 {
             font-size: 2em;
@@ -67,7 +68,7 @@
             margin: 5px 0;
         }
         .profile-info a {
-            color: #0095f6;
+            color: #4f4e53;
             text-decoration: none;
         }
         .profile-info a:hover {
@@ -75,7 +76,6 @@
         }
         .message-button {
             display: inline-block;
-            margin-left: 20px;
             padding: 5px 10px;
             background-color: #dbdbdb;
             color: #000;
@@ -84,8 +84,10 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            position: relative;
-            top: -20px;
+            position: absolute;
+            top: calc(50% - 1.7cm);
+            right: calc(50% - 2.5cm);
+            transform: translate(50%, -50%);
         }
         .message-button:hover {
             background-color: #b3b3b3;
@@ -137,8 +139,8 @@
             background-color: #f0f0f0;
         }
         .icon {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             margin-right: 5px;
             vertical-align: middle;
         }
@@ -156,17 +158,17 @@
                 <a href="mailto:mag*********@naver.com" class="message-button">메시지 보내기</a>
                 <div class="stats">
                     <div>
-                        <strong>게시물</strong><br>120
+                        <strong>게시물</strong><br>3
                     </div>
                     <div>
-                        <strong>팔로워</strong><br>1,500
+                        <strong>팔로워</strong><br>300
                     </div>
                     <div>
-                        <strong>팔로잉</strong><br>300
+                        <strong>팔로잉</strong><br>250
                     </div>
                 </div>
-                <p>이메일: mag*********@naver.com</p>
-                <p>휴대폰: 010-***-9488</p>
+                <p>e-Mail: mag*********@naver.com</p>
+                <p>H.p: 010-***-9488</p>
                 <p>GitHub: <a href="https://github.com/Gyue2">Gyue2</a></p>
             </div>
         </div>
