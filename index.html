@@ -85,7 +85,7 @@
             cursor: pointer;
             text-decoration: none;
             position: absolute;
-            top: calc(50% - 1.7cm);
+            top: calc(50% - 1.65cm);
             right: calc(50% - 2.5cm);
             transform: translate(50%, -50%);
         }
@@ -117,11 +117,12 @@
             background-color: #f0f0f0;
         }
         .section {
-            display: none;
-            padding: 20px;
+        display: none;
+        padding: 20px;
+        min-height: 400px; /* 최소 높이를 400px로 설정 */
         }
         .section.active {
-            display: block;
+        display: block;
         }
         .timeline {
             list-style: none;
@@ -144,6 +145,20 @@
             margin-right: 5px;
             vertical-align: middle;
         }
+        .github-link {
+            display: inline-block;
+            padding: 1px 5px;
+            background-color: #f5f5f5;
+            border-radius: 15px;
+            border: 1px solid #dbdbdb;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8em;
+            color: #333;
+        }
+        .github-link:hover {
+            background-color: #e0e0e0;
+        }
     </style>
 </head>
 <body>
@@ -155,7 +170,7 @@
             <div class="profile-picture"></div>
             <div class="profile-info">
                 <h1>박경규</h1>
-                <a href="mailto:mag*********@naver.com" class="message-button">메시지 보내기</a>
+                <a href="176006867+Gyue2@users.noreply.github.com" class="message-button">메시지 보내기</a>
                 <div class="stats">
                     <div>
                         <strong>게시물</strong><br>3
@@ -167,9 +182,8 @@
                         <strong>팔로잉</strong><br>250
                     </div>
                 </div>
-                <p>e-Mail: mag*********@naver.com</p>
-                <p>H.p: 010-***-9488</p>
-                <p>GitHub: <a href="https://github.com/Gyue2">Gyue2</a></p>
+                <p>　</p>
+                <p>　<a href="https://github.com/Gyue2" class="github-link"><img src="github-icon.png" alt="GitHub" class="icon">Gyue2</a></p>
             </div>
         </div>
         <div class="menu">
