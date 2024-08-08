@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #dbdbdb;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .header .title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            color: #333;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ccc;
+            background-image: url('profile.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .profile-info {
+            flex: 1;
+            text-align: left;
+        }
+        .profile-info h1 {
+            font-size: 2em;
+            margin: 0;
+            display: inline-block;
+        }
+        .profile-info p {
+            margin: 5px 0;
+        }
+        .profile-info a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+        .profile-info a:hover {
+            text-decoration: underline;
+        }
+        .message-button {
+            display: inline-block;
+            margin-left: 20px;
+            padding: 5px 10px;
+            background-color: #dbdbdb;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+            top: -20px;
+        }
+        .message-button:hover {
+            background-color: #b3b3b3;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #dbdbdb;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 0;
+        }
+        .menu div {
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+        }
+        .menu div:hover {
+            background-color: #f0f0f0;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .timeline li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            border: 1px solid #dbdbdb;
+        }
+        .timeline li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Resume</div>
+        </div>
+        <div class="profile-header">
+            <div class="profile-picture"></div>
+            <div class="profile-info">
+                <h1>박경규</h1>
+                <a href="mailto:mag*********@naver.com" class="message-button">메시지 보내기</a>
+                <div class="stats">
+                    <div>
+                        <strong>게시물</strong><br>120
+                    </div>
+                    <div>
+                        <strong>팔로워</strong><br>1,500
+                    </div>
+                    <div>
+                        <strong>팔로잉</strong><br>300
+                    </div>
+                </div>
+                <p>이메일: mag*********@naver.com</p>
+                <p>휴대폰: 010-***-9488</p>
+                <p>GitHub: <a href="https://github.com/Gyue2">Gyue2</a></p>
+            </div>
+        </div>
+        <div class="menu">
+            <div data-section="about"><img src="about-icon.png" alt="About" class="icon">소개</div>
+            <div data-section="skills-experience"><img src="skills-experience-icon.png" alt="Skills & Experience" class="icon">기술 및 경력</div>
+            <div data-section="education-projects"><img src="education-projects-icon.png" alt="Education & Projects" class="icon">학력 및 프로젝트</div>
+        </div>
+        <div class="section" id="about">
+            <h2>자기소개</h2>
+            <p>저는 열정적인 개발자로서 새로운 기술을 배우고 도전하는 것을 즐깁니다. 현재 웹 개발 분야에서 경력을 쌓고 있으며, 사용자 경험을 최적화하는 데 중점을 두고 있습니다.</p>
+        </div>
+        <div class="section" id="skills-experience">
+            <h2>기술 스택</h2>
+            <ul class="timeline">
+                <li>프로그래밍 언어: C, Python, Java</li>
+            </ul>
+            <h2>경력</h2>
+            <ul class="timeline">
+                <li>2022.10 - 2024.03: 링크프라이스</li>
+                <li>2021.02 - 2021.10: 삼양화학공업(주) </li>
+            </ul>
+        </div>
+        <div class="section" id="education-projects">
+            <h2>학력</h2>
+            <ul class="timeline">
+                <li>2013.03 - 2016.02: 범어고등학교</li>
+            </ul>
+            <h2>개인 프로젝트</h2>
+            <ul class="timeline">
+                <li>프로젝트 A: ioT기반 공장 설비 프로토콜 구축</li>
+                <li>프로젝트 B: 데이터 분석 도구 개발 (Python, Django)</li>
+            </ul>
+            <h2>수상 및 자격증</h2>
+            <ul class="timeline">
+                <li>2022.03: 회계정보처리(FAT) 2급 (국가공인)</li>
+                <li>2022.03: 회계정보처리(FAT) 1급 (국가공인)</li>
+                <li>2022.01: 정보기술자격(ITQ) 한글 A등급 최종합격</li>
+            </ul>
+            <h2>취업우대사항</h2>
+            <ul class="timeline">
+                <li>군필: 공군/병장 만기전역 (2017.04 - 2019.04)</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu div').forEach(menuItem => {
+            menuItem.addEventListener('click', () => {
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(menuItem.getAttribute('data-section')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
